@@ -1,0 +1,87 @@
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Body default */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Remove list style */
+ul,
+ol {
+  list-style: none;
+}
+
+/* A elements decoration */
+a {
+  text-decoration: none;
+}
+p a {
+  text-decoration: underline;
+}
+:where(a, a:link, a:visited, a:hover, a:active) {
+  color: inherit;
+}
+
+/* Balance text */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* Responsive medias */
+img,
+picture,
+video,
+iframe,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+svg {
+  fill: currentColor;
+}
+
+/* Form and inputs */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border-radius: 0;
+  white-space: initial;
+  border: 0;
+  background-color: transparent;
+}
+input:not([type="checkbox"], [type="radio"], select, textarea) {
+  appearance: none;
+  display: block;
+}
+textarea {
+  overflow: auto;
+  resize: none;
+  white-space: pre-wrap;
+  field-sizing: content;
+}

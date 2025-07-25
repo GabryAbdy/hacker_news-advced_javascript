@@ -1,0 +1,23 @@
+
+# Node modules
+node_modules/
+
+# Parcel output
+dist/
+
+# Parcel cache
+.parcel-cache/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editor config folders
+.vscode/
+.idea/

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Tongue Hacker News Viewer" />
+    <meta
+      property="og:description"
+      content="News aggregator based on the Hacker News API by Y Combinator."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="./assets/img/og-preview1250x650.jpg" />
+    <meta property="og:image:width" content="1250" />
+    <meta property="og:image:height" content="650" />
+    <title>Hacker News Viewer</title>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/img/site.webmanifest" />
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+    <!-- Google Font - Audiowide regular -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- MAIN SECTION -->
+    <main>
+      <!-- Title header -->
+      <h1 class="audiowide-regular">
+        Tongue<br />
+        Hacker News
+      </h1>
+      <!-- News container -->
+      <div id="news-container"></div>
+      <!-- Load button -->
+      <button id="load-more" class="audiowide-regular">Load more</button>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="copyright">© 2025 Gabriele Abd Alla Awad</div>
+      <ul class="social-links">
+        <li class="social-item">
+          <a
+            href="https://github.com/GabryAbdy"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li class="social-item">
+          <a
+            href="https://www.instagram.com/gabriele.abdalla/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li class="social-item">
+          <a
+            href="https://www.linkedin.com/in/gabriele-abd-alla-awad-76397a196/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <!-- Scroll-to-top button -->
+    <button id="scroll-to-top" aria-label="Scroll to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- Custom JavaScript -->
+    <script type="module" src="./main.js"></script>
+    <!-- Script Fontawesome icons -->
+    <script
+      src="https://kit.fontawesome.com/96e031cbd8.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

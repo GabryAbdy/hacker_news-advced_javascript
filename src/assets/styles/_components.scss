@@ -1,0 +1,115 @@
+@use "variables" as *;
+
+/* News item
+News title
+News link
+News date */
+.news-item {
+  padding: 0.5rem;
+  border-bottom: 1px solid $secondary-color;
+  transition: background-color 0.5s;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title title title"
+    "link . date";
+}
+.news-item:hover {
+  background-color: hsl(0, 0%, 20%);
+}
+
+.news-title {
+  grid-area: title;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+a.news-link {
+  grid-area: link;
+  margin-bottom: 0.5rem;
+  width: max-content;
+  text-decoration: underline;
+  cursor: pointer;
+}
+a.news-link:hover {
+  color: rgba(19, 148, 253, 0.8);
+}
+a.news-link:active {
+  color: white;
+}
+a.news-link:visited {
+  color: $secondary-color;
+}
+
+.news-date {
+  grid-area: date;
+  justify-self: end;
+  margin-bottom: 0.5rem;
+}
+
+/* Button */
+#load-more {
+  cursor: pointer;
+  width: 8rem;
+  display: block;
+  margin: 0.5rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 18%);
+  color: $primary-color;
+  /* font-weight: 700; */
+  transition: border 0.5 ease, background-color 0.5s ease;
+}
+#load-more:hover {
+  /* background-color: $btn-bg-hover; */
+  border: 1px solid $primary-color;
+}
+#load-more:active {
+  background-color: $secondary-color;
+}
+
+/* Message box */
+.message-box {
+  text-align: center;
+  padding: 0.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Scroll to top button */
+#scroll-to-top {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: $secondary-color;
+  color: $btn-color;
+  font-size: 1.25rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.5 ease;
+  z-index: 100;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+#scroll-to-top.show:hover {
+  background-color: $btn-bg-hover;
+}
+#scroll-to-top.show:active {
+  background-color: $secondary-color;
+}
+
+/* Hide utility */
+.hidden {
+  visibility: hidden;
+}
