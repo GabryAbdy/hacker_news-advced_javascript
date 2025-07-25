@@ -18,6 +18,4 @@ I did't use any external library or framework, only JavaScript.
 
 I hosted the application on Netlify on this link:  
 
-link  
-
 https://tonguehackernews.netlify.app/
